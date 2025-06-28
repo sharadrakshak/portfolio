@@ -17,7 +17,7 @@ export default function Profile() {
            &nbsp; Front‑End Trainee <br/>&nbsp;&nbsp;(Unity Background)
           </h2>
           <span className="links">
-            <a href="https://github.com/" target="_blank">
+            <a href="https://github.com/sharadrakshak/portfolio" target="_blank">
               <img src={Git} alt="" />
             </a>
             <a href="https://www.linkedin.com/" target="_blank">
