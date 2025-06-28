@@ -3,7 +3,7 @@ import Git from "../assets/github-light.svg";
 import linkedin from "../assets/linkedin-light.svg";
 import pdf from "../assets/sharad  resume.pdf (2).pdf";
 import img from "../assets/anime.png";
-import sun from "../assets/sun.svg"
+import sun from "../assets/sun.svg";
 
 export default function Profile() {
   return (
@@ -14,13 +14,20 @@ export default function Profile() {
             Sharad <br /> Rakshak
           </h1>
           <h2 className="title">
-           &nbsp; Front‑End Trainee <br/>&nbsp;&nbsp;(Unity Background)
+            &nbsp; Front‑End Trainee <br />
+            &nbsp;&nbsp;(Unity Background)
           </h2>
           <span className="links">
-            <a href="https://github.com/sharadrakshak/portfolio" target="_blank">
+            <a
+              href="https://github.com/sharadrakshak/portfolio"
+              target="_blank"
+            >
               <img src={Git} alt="" />
             </a>
-            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/sharad-rakshak-a1b5052b0"
+              target="_blank"
+            >
               <img src={linkedin} alt="" />
             </a>
           </span>
@@ -36,9 +43,9 @@ export default function Profile() {
       </div>
       <div className="RightSide">
         <div className="zoom">
-          <img className="Pic" src={img} alt="" />  
+          <img className="Pic" src={img} alt="" />
         </div>
-          <img className="sun_img" src={sun} alt="" />
+        <img className="sun_img" src={sun} alt="" />
       </div>
     </main>
   );
