@@ -1,0 +1,26 @@
+import React from 'react'
+import globe from "../assets/earth.png"
+import Crud from "../assets/CRUD.png"
+import weather from "../assets/weather.png"
+
+export default function Projects() {
+  return (
+    <div className='project_title'>
+      <h1 className='section_title'>Projects</h1>
+      <div className="projects_container">
+        <a>
+            <img className='earth' src={globe} alt="" />
+            <h3>Country Finder</h3>
+        </a>
+        <a>
+            <img className='crud' src={Crud} alt="" />
+            <h3>CRUD App</h3>
+        </a>
+        <a>
+            <img className='weather' src={weather} alt="" />
+            <h3>Weather Api</h3>
+        </a>
+      </div>
+    </div>
+  )
+}
