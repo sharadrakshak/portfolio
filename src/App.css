@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  height: 100dvh;
+  height: 120dvh;
   min-height: 500px;
   flex-direction: column;
 }
