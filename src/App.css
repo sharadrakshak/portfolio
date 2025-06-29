@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
 }
+#root {
+  display: flex;
+  gap: 200px;
+  flex-direction: column;
+}
 body {
   display: flex;
   justify-content: center;
-  margin: 0 auto 60px;
+  margin: 0 auto 100px;
 }
 :root {
   --background-color: #fff;
@@ -104,7 +109,7 @@ h1 {
 }
 .section_title {
   font-family: Rubik, sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 60px;
 }
@@ -120,10 +125,6 @@ h1 {
   font-size: 24px;
   text-align: center;
 }
-.projects_container a {
-  cursor: pointer;
-  max-width: 250px;
-}
 
 .projects_container a img {
   width: 100%;
@@ -135,7 +136,14 @@ h1 {
   align-items: center;
   gap: 40px;
   flex-direction: column;
+  cursor: pointer;
+  max-width: 250px;
+  transition: transform 0.2s ease-in-out;
 }
+.projects_container a:hover {
+  transform: scale(1.05);
+}
+
 .skill_list {
   display: flex;
   justify-content: space-evenly;
@@ -171,4 +179,42 @@ hr {
   background-color: black;
   border: none;
   margin: 30px auto;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_title {
+  font-family: Rubik, sans-serif;
+  font-size: 48px;
+  margin-bottom: 75px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+form input {
+  width: 800px;
+  font-size: 20px;
+  height: 50px;
+  padding-left: 16px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+form textarea {
+  height: 250px;
+  padding-top: 16px;
+  resize: none;
+  padding-left: 16px;
+  box-sizing: border-box;
+  font-size: 22px;
+  width: 800px;
+  border-radius: 20px;
+}
+form button {
+  align-self: center;
 }
