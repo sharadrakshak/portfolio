@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   margin: 0 auto 60px;
 }
 :root {
@@ -90,7 +90,7 @@ h1 {
   right: 0;
   width: 25px;
 }
-.project_title{
+.project_title {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -108,8 +108,8 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 60px;
 }
- 
-.projects_container{
+
+.projects_container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -118,21 +118,57 @@ h1 {
 .projects_container a h3 {
   font-family: Roboto Mono, monospace;
   font-size: 24px;
-   text-align: center;
+  text-align: center;
 }
 .projects_container a {
   cursor: pointer;
-  max-width: 250px;  
+  max-width: 250px;
 }
- 
+
 .projects_container a img {
   width: 100%;
 }
- 
- .projects_container a{
+
+.projects_container a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   flex-direction: column;
- }
+}
+.skill_list {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.skill_title {
+  font-size: 48px;
+  font-family: Rubik, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+}
+.skill_list img {
+  width: 22px;
+  height: 22px;
+  text-align: center;
+}
+.skill_list p {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: Roboto Mono, monospace;
+}
+.skill_list span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+hr {
+  width: 300px;
+  height: 1px;
+  background-color: black;
+  border: none;
+  margin: 30px auto;
+}
