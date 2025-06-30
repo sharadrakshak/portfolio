@@ -1,6 +1,8 @@
 import React from "react";
-import Git from "../assets/github-light.svg";
-import linkedin from "../assets/linkedin-light.svg";
+import Gitlight from "../assets/github-light.svg";
+import GitDark from "../assets/github-dark.svg";
+import linkedin_light from "../assets/linkedin-light.svg";
+import linkedin_dark from "../assets/linkedin-dark.svg";
 import pdf from "../assets/sharad  resume.pdf (2).pdf";
 import img from "../assets/anime.png";
 import sun from "../assets/sun.svg";
@@ -27,13 +29,13 @@ export default function Profile() {
               href="https://github.com/sharadrakshak/portfolio"
               target="_blank"
             >
-              <img src={Git} alt="" />
+              <img src={`${isDark?GitDark:Gitlight}`} alt="" />
             </a>
             <a
               href="https://www.linkedin.com/in/sharad-rakshak-a1b5052b0"
               target="_blank"
             >
-              <img src={linkedin} alt="" />
+              <img src={`${isDark?linkedin_dark:linkedin_light}`} alt="" />
             </a>
           </span>
           <p className="description">

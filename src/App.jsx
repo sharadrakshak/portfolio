@@ -10,8 +10,7 @@ function App() {
   const [isDark, setIsDark] = useState(
     JSON.parse(localStorage.getItem("isDarkset"))
   );
-  useEffect(() => {
-    // localStorage.setItem("isDarkset", JSON.stringify(isDark));
+  useEffect(() => { 
     document.body.classList.toggle("dark_hero", isDark);
   }, [isDark]);
   return (
