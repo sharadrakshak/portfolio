@@ -8,7 +8,7 @@ export default function Projects() {
     <div className='project_title'>
       <h1 className='section_title'>Projects</h1>
       <div className="projects_container">
-        <a>
+        <a href='https://lucky-salmiakki-4c653b.netlify.app/'>
             <img className='earth' src={globe} alt="" />
             <h3>Country Finder</h3>
         </a>
