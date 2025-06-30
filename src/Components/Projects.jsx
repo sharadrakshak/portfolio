@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import globe from "../assets/earth.png"
 import Crud from "../assets/crud.svg"
 import weather from "../assets/weather.png"

@@ -4,8 +4,13 @@ import linkedin from "../assets/linkedin-light.svg";
 import pdf from "../assets/sharad  resume.pdf (2).pdf";
 import img from "../assets/anime.png";
 import sun from "../assets/sun.svg";
+import moon from "../assets/moon.svg";
+import { useContext } from "react";
+import { Theme } from "./Theme";
 
 export default function Profile() {
+  const [isDark, setIsDark] = useContext(Theme);
+
   return (
     <main className="hero">
       <div className="leftSide">
@@ -45,7 +50,15 @@ export default function Profile() {
         <div className="zoom">
           <img className="Pic" src={img} alt="" />
         </div>
-        <img className="sun_img" src={sun} alt="" />
+        <img
+          onClick={() => {
+            setIsDark(!isDark);
+            localStorage.setItem("isDarkset", !isDark);
+          }}
+          className={`${isDark ? "moon_img" : "sun_img"}`}
+          src={`${isDark ? moon : sun}`}
+          alt=""
+        />
       </div>
     </main>
   );
