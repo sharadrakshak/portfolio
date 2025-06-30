@@ -1,50 +1,32 @@
-import React from 'react'
-import tick from "../assets/checkmark-light.svg"
+import React, { Fragment, useContext } from "react";
+import tick_light from "../assets/checkmark-light.svg";
+import tick_dark from "../assets/checkmark-dark.svg";
+import { Theme } from "./Theme";
 
 export default function Skills() {
+  const [isDark] = useContext(Theme);
+  const icon = isDark ? tick_dark : tick_light;
+  const group = [
+    { title: 1, items: ["HTML", "CSS", "JavaScript"] },
+    { title: 2, items: ["React", "TailWind Css"] },
+    { title: 3, items: ["Git", "Github", "Bootstrap"] },
+  ];
   return (
-    <div className='skill'>
-      <h1 className='skill_title'>Skills</h1>
-      <div className="skill_list">
-        <span>
-            <img src={tick} alt="" />
-            <p>HTML</p>
-        </span>
-        <span>
-            <img src={tick} alt="" />
-            <p>CSS</p>
-        </span>
-        <span>
-            <img src={tick} alt="" />
-            <p>JavaScript</p>
-        </span> 
-      </div>
-      <hr />
-      <div className="skill_list">
-        <span>
-            <img src={tick} alt="" />
-            <p>React</p>
-        </span>
-        <span>
-            <img src={tick} alt="" />
-            <p>TailWind Css</p>
-        </span> 
-      </div>
-      <hr />
-      <div className="skill_list">
-        <span>
-            <img src={tick} alt="" />
-            <p>Git</p>
-        </span>
-        <span>
-            <img src={tick} alt="" />
-            <p>Github</p>
-        </span> 
-        <span>
-            <img src={tick} alt="" />
-            <p>Bootstrap</p>
-        </span> 
-      </div>
+    <div className="skill">
+      <h1 className="skill_title">Skills</h1>
+      {group.map((g) => (
+        <React.Fragment key={g.title}>
+          <div className="skill_list">
+            {g.items.map((name) => (
+              <span key={name}>
+                <img src={icon} alt="" />
+                <p>{name}</p>
+              </span>
+            ))}
+          </div>
+          {g.title < 3 ? <hr /> : ""}
+        </React.Fragment>
+      ))}
     </div>
-  )
+  );
 }

@@ -25,11 +25,11 @@ body {
   min-height: 500px;
   flex-direction: column-reverse;
 }
-.dark_hero { 
+.dark_hero {
   background-color: hsl(207, 26%, 17%);
   color: white;
 }
-.projectTitle{
+.projectTitle {
   color: white;
 }
 h1 {
@@ -107,7 +107,7 @@ h1 {
 .moon_img {
   position: absolute;
   right: 0;
-  width: 25px; 
+  width: 25px;
 }
 .project_title {
   display: flex;
@@ -235,6 +235,14 @@ form textarea {
 }
 form button {
   align-self: center;
+}
+.inputForm {
+  background-color: #212d38;
+  border: 1px solid grey;
+  color: white;
+}
+.inputForm::placeholder {
+ color: white;
 }
 .projects_container a {
   text-decoration: none;
