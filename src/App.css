@@ -30,6 +30,7 @@ body {
   color: white;
 }
 .projectTitle {
+  
   color: white;
 }
 h1 {
@@ -91,6 +92,9 @@ h1 {
   justify-content: space-around;
   align-items: center;
   gap: 50px;
+}
+.hrmode{
+  background-color: white;
 }
 .zoom {
   border-radius: 50%;

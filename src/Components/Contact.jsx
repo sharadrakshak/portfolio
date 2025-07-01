@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div className="contact">
       <h1 className="contact_title">CONTACT</h1>
-      <form action="">
+      <form name="forms" action="">
         <input
           className={`${isDark ? "inputForm" : ""}`}
           type="text"

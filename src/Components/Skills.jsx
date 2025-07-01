@@ -24,7 +24,7 @@ export default function Skills() {
               </span>
             ))}
           </div>
-          {g.title < 3 ? <hr /> : ""}
+          {g.title < 3 ? <hr className={isDark?"hrmode":""} /> : ""}
         </React.Fragment>
       ))}
     </div>
