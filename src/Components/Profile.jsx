@@ -3,7 +3,7 @@ import Gitlight from "../assets/github-light.svg";
 import GitDark from "../assets/github-dark.svg";
 import linkedin_light from "../assets/linkedin-light.svg";
 import linkedin_dark from "../assets/linkedin-dark.svg";
-import pdf from "../assets/sharad  resume.pdf (2).pdf";
+import pdf from "../assets/Resume.pdf";
 import img from "../assets/anime.png";
 import sun from "../assets/sun.svg";
 import moon from "../assets/moon.svg";
