@@ -173,6 +173,9 @@ h1 {
   text-align: center;
   margin: auto;
 }
+.moon{
+  cursor: pointer;
+}
 .skill_title {
   font-size: 48px;
   font-family: Rubik, sans-serif;

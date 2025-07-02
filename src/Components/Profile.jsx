@@ -57,7 +57,7 @@ export default function Profile() {
             setIsDark(!isDark);
             localStorage.setItem("isDarkset", !isDark);
           }}
-          className={`${isDark ? "moon_img" : "sun_img"}`}
+          className={`${isDark ? "moon_img" : "sun_img"} moon`}
           src={`${isDark ? moon : sun}`}
           alt=""
         />
