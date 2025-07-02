@@ -26,7 +26,7 @@ export default function Profile() {
           </h2>
           <span className="links">
             <a
-              href="https://github.com/sharadrakshak/portfolio"
+              href="https://github.com/sharadrakshak?tab=repositories"
               target="_blank"
             >
               <img src={`${isDark?GitDark:Gitlight}`} alt="" />
